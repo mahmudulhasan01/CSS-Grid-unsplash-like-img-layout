@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Gallery</title>
+  <style>
+    body {
+      background-color: rgba(250, 235, 215, 0.571);
+      max-width: 1200px;
+      margin: 2rem auto;
+
+    }
+
+    .container {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+      grid-auto-flow: dense;
+    }
+
+    .container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    .horizontal {
+      grid-column: span 2;
+    }
+
+    .vertical {
+      grid-row: span 2.5;
+    }
+
+    .big {
+      /* grid: span 2 / span 2; */
+      grid-row: span 1;
+      grid-column: span 2;
+
+    }
+
+    /* ============= Responsive for  Device ============== */
+    @media only screen and (max-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
+      }
+
+      body {
+        background-color: rgba(250, 235, 215, 0.571);
+        max-width: 800px;
+        margin: 1rem auto;
+
+      }
+    }
+
+    /* ============= Responsive for Mobile Device ============== */
+    @media only screen and (max-width: 600px) {
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(5rem, auto));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <img src="https://i.pinimg.com/236x/7e/d8/c3/7ed8c3827470e698b2932b89c0f07166.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/236x/6d/f6/76/6df6763c79bd81633d9a4a96cda3a6ac.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/236x/34/86/79/348679bc2048051663f792950b230240.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/d2/45/60/d24560bbd822c1d9b60e1371725a819e.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/736x/3b/7f/c3/3b7fc3e9bc4bf0303543a71db941aca2.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/564x/bb/23/b5/bb23b5904045574cb8c1db96eababeac.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/a5/7e/22/a57e22366c092de4a9ca75fd7c9c40a6.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/a4/2a/53/a42a5351c0423a395192e44e59fd5808.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/04/aa/2d/04aa2d03e1a2398d996013add8725659.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/55/cd/29/55cd29c3dd8c4ad7ebd92f2314a97a91.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/c2/75/ba/c275ba13cd404b89bd45010961f6b3d4.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/63/29/1c/63291c19bac7412c71de047c1c76aef3.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/41/be/ee/41beee889cd99f0e5dcf8a66351254c1.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/9a/c7/e0/9ac7e03cac00fe010ae529d05b18dcc8.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/9e/6d/4a/9e6d4a627487bc176cafd85a81b3f4aa.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/de/68/3d/de683d8325a2f8f4817c182ca6f3c662.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/eb/8f/26/eb8f26d5b2b748521f1daaebc71d337f.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/5b/8b/37/5b8b3711c0b2948e196392804e97a72a.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/7e/d8/c3/7ed8c3827470e698b2932b89c0f07166.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/236x/6d/f6/76/6df6763c79bd81633d9a4a96cda3a6ac.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/236x/34/86/79/348679bc2048051663f792950b230240.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/d2/45/60/d24560bbd822c1d9b60e1371725a819e.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/736x/3b/7f/c3/3b7fc3e9bc4bf0303543a71db941aca2.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/564x/bb/23/b5/bb23b5904045574cb8c1db96eababeac.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/a5/7e/22/a57e22366c092de4a9ca75fd7c9c40a6.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/a4/2a/53/a42a5351c0423a395192e44e59fd5808.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/04/aa/2d/04aa2d03e1a2398d996013add8725659.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/55/cd/29/55cd29c3dd8c4ad7ebd92f2314a97a91.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/c2/75/ba/c275ba13cd404b89bd45010961f6b3d4.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/63/29/1c/63291c19bac7412c71de047c1c76aef3.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/41/be/ee/41beee889cd99f0e5dcf8a66351254c1.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/9a/c7/e0/9ac7e03cac00fe010ae529d05b18dcc8.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/9e/6d/4a/9e6d4a627487bc176cafd85a81b3f4aa.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/de/68/3d/de683d8325a2f8f4817c182ca6f3c662.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/eb/8f/26/eb8f26d5b2b748521f1daaebc71d337f.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/5b/8b/37/5b8b3711c0b2948e196392804e97a72a.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/7e/d8/c3/7ed8c3827470e698b2932b89c0f07166.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/236x/6d/f6/76/6df6763c79bd81633d9a4a96cda3a6ac.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/236x/34/86/79/348679bc2048051663f792950b230240.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/d2/45/60/d24560bbd822c1d9b60e1371725a819e.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/736x/3b/7f/c3/3b7fc3e9bc4bf0303543a71db941aca2.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/564x/bb/23/b5/bb23b5904045574cb8c1db96eababeac.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/a5/7e/22/a57e22366c092de4a9ca75fd7c9c40a6.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/a4/2a/53/a42a5351c0423a395192e44e59fd5808.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/04/aa/2d/04aa2d03e1a2398d996013add8725659.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/55/cd/29/55cd29c3dd8c4ad7ebd92f2314a97a91.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/c2/75/ba/c275ba13cd404b89bd45010961f6b3d4.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/63/29/1c/63291c19bac7412c71de047c1c76aef3.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/41/be/ee/41beee889cd99f0e5dcf8a66351254c1.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/9a/c7/e0/9ac7e03cac00fe010ae529d05b18dcc8.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/9e/6d/4a/9e6d4a627487bc176cafd85a81b3f4aa.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/de/68/3d/de683d8325a2f8f4817c182ca6f3c662.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/eb/8f/26/eb8f26d5b2b748521f1daaebc71d337f.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/5b/8b/37/5b8b3711c0b2948e196392804e97a72a.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/7e/d8/c3/7ed8c3827470e698b2932b89c0f07166.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/236x/6d/f6/76/6df6763c79bd81633d9a4a96cda3a6ac.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/236x/34/86/79/348679bc2048051663f792950b230240.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/d2/45/60/d24560bbd822c1d9b60e1371725a819e.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/736x/3b/7f/c3/3b7fc3e9bc4bf0303543a71db941aca2.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/564x/bb/23/b5/bb23b5904045574cb8c1db96eababeac.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/a5/7e/22/a57e22366c092de4a9ca75fd7c9c40a6.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/a4/2a/53/a42a5351c0423a395192e44e59fd5808.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/04/aa/2d/04aa2d03e1a2398d996013add8725659.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/55/cd/29/55cd29c3dd8c4ad7ebd92f2314a97a91.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/c2/75/ba/c275ba13cd404b89bd45010961f6b3d4.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/63/29/1c/63291c19bac7412c71de047c1c76aef3.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/41/be/ee/41beee889cd99f0e5dcf8a66351254c1.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/9a/c7/e0/9ac7e03cac00fe010ae529d05b18dcc8.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/9e/6d/4a/9e6d4a627487bc176cafd85a81b3f4aa.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/de/68/3d/de683d8325a2f8f4817c182ca6f3c662.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/eb/8f/26/eb8f26d5b2b748521f1daaebc71d337f.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/5b/8b/37/5b8b3711c0b2948e196392804e97a72a.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/7e/d8/c3/7ed8c3827470e698b2932b89c0f07166.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/236x/6d/f6/76/6df6763c79bd81633d9a4a96cda3a6ac.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/236x/34/86/79/348679bc2048051663f792950b230240.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/d2/45/60/d24560bbd822c1d9b60e1371725a819e.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/736x/3b/7f/c3/3b7fc3e9bc4bf0303543a71db941aca2.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/564x/bb/23/b5/bb23b5904045574cb8c1db96eababeac.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/a5/7e/22/a57e22366c092de4a9ca75fd7c9c40a6.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/a4/2a/53/a42a5351c0423a395192e44e59fd5808.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/04/aa/2d/04aa2d03e1a2398d996013add8725659.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/55/cd/29/55cd29c3dd8c4ad7ebd92f2314a97a91.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/c2/75/ba/c275ba13cd404b89bd45010961f6b3d4.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/63/29/1c/63291c19bac7412c71de047c1c76aef3.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/41/be/ee/41beee889cd99f0e5dcf8a66351254c1.jpg" />
+    </div>
+    <div class="horizontal">
+      <img src="https://i.pinimg.com/564x/9a/c7/e0/9ac7e03cac00fe010ae529d05b18dcc8.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/9e/6d/4a/9e6d4a627487bc176cafd85a81b3f4aa.jpg" />
+    </div>
+    <div class="big">
+      <img src="https://i.pinimg.com/236x/de/68/3d/de683d8325a2f8f4817c182ca6f3c662.jpg" />
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/236x/eb/8f/26/eb8f26d5b2b748521f1daaebc71d337f.jpg" />
+    </div>
+    <div class="vertical">
+      <img src="https://i.pinimg.com/750x/5b/8b/37/5b8b3711c0b2948e196392804e97a72a.jpg" />
+    </div>
+  </div>
+
+</body>
+
+</html>
